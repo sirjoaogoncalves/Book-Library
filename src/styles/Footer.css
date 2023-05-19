@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+footer {
+  bottom: 0;
+  width: 100%;
+  background-color: transparent;
+  padding: 1rem;
+  
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+p {
+  font-size: 0.9rem;
+  text-align: center;
+  margin: 0;
+}

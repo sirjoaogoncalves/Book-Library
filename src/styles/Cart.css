@@ -1,0 +1,149 @@
+.cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.cart h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.cart p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.cart table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.cart th,
+.cart td {
+  padding: 10px;
+  text-align: center;
+  border: 1px outset #ffffff18;
+  color: #ccc;
+}
+
+.cart th {
+  font-weight: bold;
+  color: #ccc;
+}
+
+.cart img {
+  width: 120px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.cart button {
+  background-color: #f12b6b;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.cart button:hover {
+  background-color: #c70039;
+}
+
+.cart button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.cart .total {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .cart table {
+    font-size: 0.8rem;
+  }
+
+  .cart img {
+    width: 60px;
+    height: 75px;
+  }
+
+  .cart th,
+  .cart td {
+    padding: 5px;
+  }
+
+  .cart button {
+    padding: 5px;
+    font-size: 0.8rem;
+  }
+
+  .cart table,
+  .cart thead,
+  .cart tbody,
+  .cart th,
+  .cart td,
+  .cart tr {
+    display: block;
+  }
+
+  .cart thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .cart tr {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+
+  .cart td {
+    border: none;
+    position: relative;
+    padding-left: 50%;
+    text-align: left;
+  }
+
+  .cart td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    font-weight: bold;
+  }
+
+
+  .cart td:nth-of-type(1):before {
+    content: "Cover";
+  }
+
+  .cart td:nth-of-type(2):before {
+    content: "Title";
+  }
+
+  .cart td:nth-of-type(3):before {
+    content: "Author";
+  }
+
+  .cart td:nth-of-type(4):before {
+    content: "Price";
+  }
+
+  .cart button {
+    display: block;
+    margin: 10px auto;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+}

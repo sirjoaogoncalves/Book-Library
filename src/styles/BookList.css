@@ -1,0 +1,72 @@
+ul.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  box-sizing: border-box;
+  padding: 10px;
+  
+}
+
+
+.book {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+}
+
+.book-handler{
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.book h3 {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.book p {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.book img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 1358px) {
+ul.book-list li {
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.book{
+ align-items: center; 
+ justify-content: center;
+ margin: 0 auto;
+}
+.book h3 {
+font-size: 1rem;
+}
+
+.book p {
+font-size: 0.8rem;
+}
+}

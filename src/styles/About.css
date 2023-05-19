@@ -1,0 +1,31 @@
+.page-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.page-title {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.page-content p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+
+@media (max-width: 600px) {
+  .page-container {
+    padding: 20px;
+  }
+
+  .page-title {
+    font-size: 25px;
+  }
+
+  .page-content p {
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,185 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+button {
+	margin: 10px;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	font-size: large;
+}
+
+button:hover {
+	background-color: #c70039;
+}
+
+.categories-buttons {
+	display: flex;
+	justify-content: center;
+}
+
+.categories-buttons > button {
+	margin: 10px;
+	background-color: #ffffff;
+	color: #000000;
+	border: 2px solid #000000;
+	padding: 10px 20px;
+	font-size: 1rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	border-radius: 50px;
+	transition: all 0.3s ease;
+}
+
+.categories-buttons > button:hover {
+	background-color: #000000;
+	color: #ffffff;
+	border-color: #ffffff;
+	cursor: pointer;
+}
+
+h1 {
+	font-size: 2rem;
+	margin-bottom: 20px;
+}
+
+.message {
+	font-size: 1.2rem;
+	color: #ee9b9b;
+	margin-top: 20px;
+}
+
+.book-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 20px;
+	margin: 1rem 1rem;
+	width: 100%;
+}
+
+.categories {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 1rem;
+	padding: 1rem 1rem;
+}
+
+.categories > select {
+	font-size: 1rem;
+	padding: 10px 20px;
+	border-radius: 50px;
+	border: 2px solid #000000;
+	appearance: none;
+	background-color: #ffffff;
+	color: #000000;
+	margin-bottom: 1rem;
+}
+
+.categories > select:focus {
+	outline: none;
+	border-color: #c70039;
+}
+
+.authors > select {
+	font-size: 1rem;
+	padding: 10px 20px;
+	border-radius: 50px;
+	border: 2px solid #000000;
+	appearance: none;
+	background-color: #ffffff;
+	color: #000000;
+	margin-bottom: 1rem;
+}
+
+.authors > select:focus {
+	outline: none;
+	border-color: #c70039;
+}
+
+.date > select {
+	font-size: 1rem;
+	padding: 10px 20px;
+	border-radius: 50px;
+	border: 2px solid #000000;
+	appearance: none;
+	background-color: #ffffff;
+	color: #000000;
+	margin-bottom: 1rem;
+}
+
+.date > select:focus {
+	outline: none;
+	border-color: #c70039;
+}
+
+button:focus {
+	outline: none;
+}
+
+@media screen and (max-width: 768px) {
+	input[type='text'] {
+		margin-right: 0;
+		margin-bottom: 1rem;
+		width: 100%;
+		align-items: center;
+	}
+
+	button {
+		margin-top: 1rem;
+		align-items: center;
+		justify-content: center;
+	}
+	.container {
+		padding: 0 1rem;
+	}
+
+	h1 {
+		font-size: 1.5rem;
+	}
+
+	.book-list,
+	.categories {
+		margin: 0;
+	}
+
+	.book-list {
+		width: 100%;
+	}
+
+	.categories {
+		padding: 0;
+	}
+
+	.categories-buttons {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+
+	.categories > select {
+		margin-right: 0.5rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.categories > select:last-child {
+		margin-bottom: 0;
+	}
+	.authors {
+		padding: 0;
+	}
+  	.authors > select {
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+  	}
+  	.authors > select:last-child {
+    margin-bottom: 0;
+  	}
+}
