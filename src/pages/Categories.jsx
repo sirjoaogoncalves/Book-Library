@@ -24,6 +24,8 @@ function Categories() {
     setSelectedAuthor(author); // Update the selected author state
   };
 
+
+
   const handleSearch = () => {
     setSearchClicked(true); // Sets the searchClicked state to true
 

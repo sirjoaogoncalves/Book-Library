@@ -38,10 +38,7 @@ function Navbar() {
 				</li>
 				<li>
 					<Link to='/about'>About Us</Link>
-				</li>
-				<li>
-					<Link to='/testimonials'>Testimonials</Link>
-				</li>
+				</li>	
 				<li>
 					<Link to='/categories'>Categories</Link>
 				</li>

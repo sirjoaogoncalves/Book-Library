@@ -15,6 +15,14 @@
   margin-bottom: 20px;
 }
 
+.testimonials  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+  color : #fff;
+}
+
 
 @media (max-width: 600px) {
   .page-container {
@@ -28,4 +36,9 @@
   .page-content p {
     font-size: 1.1rem;
   }
+  .testimonials  {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
 }

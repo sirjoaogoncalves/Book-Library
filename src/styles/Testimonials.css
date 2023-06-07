@@ -41,6 +41,29 @@
     font-size: 1.2rem;
   }
 
+  .slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    
+    background-color: #ffffff00;
+   
+    cursor: pointer;
+    z-index: 1;
+  }
+
 
   @media (max-width: 768px) {
     .container {

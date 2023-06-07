@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/About.css';
+import Testimonials from './Testimonials';
 
 function About() {
 	return (
@@ -14,6 +15,8 @@ function About() {
 					We believe that reading is a powerful tool that can educate, inspire, and entertain. Whether you're looking for a new book to read, or want to connect with other book lovers, our library has
 					something for everyone.
 				</p>
+        <h2 className='testimonials'>Hear from our costumers</h2>
+        <Testimonials />
 			</div>
 		</div>
 	);
