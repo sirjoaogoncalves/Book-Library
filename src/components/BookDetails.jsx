@@ -41,7 +41,7 @@ function BookDetails() {
 				<h1>{book.volumeInfo.title}</h1>
 				<p className='author'>By {book.volumeInfo.authors ? book.volumeInfo.authors.join(', ') : 'Unknown'}</p>
 				<p className='published-date'>{book.volumeInfo.publishedDate}</p>
-				<div dangerouslySetInnerHTML={{ __html: book.volumeInfo.description }} />
+				<div className='description' dangerouslySetInnerHTML={{ __html: book.volumeInfo.description }} />
 				<p className='page-count'>{book.volumeInfo.pageCount} pages</p>
 				<p className='language'>Language: {book.volumeInfo.language}</p>
 				<p className='categories'>Categories: {book.volumeInfo.categories ? book.volumeInfo.categories.join(', ') : 'None'}</p>

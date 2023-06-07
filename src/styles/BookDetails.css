@@ -35,8 +35,21 @@ body {
 	line-height: 1.1rem;
 	color: white;
 	text-align: justify !important;
-	width: 100%;;
+	width: 90%;
+  overflow: hidden;
 }
+
+.book-info .description {
+	text-align: center;
+  line-height: 2rem;
+	margin-bottom: 1rem;
+  word-wrap: break-word;
+  font-size: 1.2rem; 
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
 
 .book-info h1 {
 	font-size: 2rem;
@@ -44,11 +57,21 @@ body {
 	margin-bottom: 2rem;
 	
 }
-.book-info p i{
-	text-align: justify;
+.book-info p {
+	text-align: center;
+  line-height: 2rem;
 	margin-bottom: 1rem;
+  word-wrap: break-word;
+  font-size: 1.2rem;
 }
 
+.book-info i {
+  display: none;
+}
+
+.book-info b {
+  display: none;
+}
 
 .book-info .author {
 	font-weight: bold;

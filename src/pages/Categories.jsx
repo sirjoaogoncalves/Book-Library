@@ -26,16 +26,32 @@ function Categories() {
 
 
 
-  const handleSearch = () => {
-    setSearchClicked(true); // Sets the searchClicked state to true
+const handleSearch = async () => {
+  setSearchClicked(true);
 
-    // Constructs the query based on the selected category or author
-    const categoryQuery = `${selectedCategory} subject:${selectedCategory}`;
-    const authorQuery = `inauthor:${selectedAuthor}`;
-    const query = selectedAuthor ? `${authorQuery} ${categoryQuery}` : categoryQuery;
-    const encodedQuery = encodeURIComponent(query);
+  const categoryQuery = `${selectedCategory} subject:${selectedCategory}`;
+  const authorQuery = `inauthor:${selectedAuthor}`;
+  const query = selectedAuthor ? `${authorQuery} ${categoryQuery}` : categoryQuery;
+  const encodedQuery = encodeURIComponent(query);
+
+  try {
+    const response = await axios.get(`https://www.googleapis.com/books/v1/volumes?q=${encodedQuery}`);
+    const books =
+      response.data.items?.map(book => {
+        return {
+          ...book,
+          id: book.id || Math.random().toString(36).substring(7),
+        };
+      }) ?? [];
+    setBooks(books);
+  } catch (error) {
+    console.error(error);
+  }
+};
+ 
+const fetchBooksByRating = () => {
     axios
-      .get(`https://www.googleapis.com/books/v1/volumes?q=${encodedQuery}`)
+      .get('https://www.googleapis.com/books/v1/volumes?q=subject:fiction&maxResults=10')
       .then(response => {
         const books =
           response.data.items?.map(book => {
@@ -44,7 +60,7 @@ function Categories() {
               id: book.id || Math.random().toString(36).substring(7),
             };
           }) ?? [];
-        setBooks(books); // Updates the books state with the fecthed books
+        setBooks(books);
       })
       .catch(error => {
         console.error(error);
@@ -102,10 +118,10 @@ function Categories() {
     'William Shakespeare'
   ];
 
-  useEffect(() => {
-		handleSearch();
-	// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, []);
+useEffect(() => {
+    fetchBooksByRating(); // Fetch books with highest rating on component mount
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const toggleShowCategories = () => {
     setShowCategories(showCategories => !showCategories);
