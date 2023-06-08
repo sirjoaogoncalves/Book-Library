@@ -32,24 +32,24 @@ function Navbar() {
 	return (
 		<nav className='navbar'>
 			<div className='navbar-toggle' onClick={toggleMenu}>
-				<span className='sr-only'><FcList/></span>
+				<span className='sr-only'><FcList style={{fontSize:'2rem'}} /></span>
 			</div>
 			<ul className={`navbar-links ${showMenu ? 'active' : ''}`}>
 				<li>
-					<Link to='/'><FcHome/></Link>
+					<Link to='/'><FcHome style={{fontSize:'2rem'}} /></Link>
 				</li>
 				<li>
-					<Link to='/about'><FcAbout/></Link>
+					<Link to='/about'><FcAbout style={{fontSize:'2rem'}} /></Link>
 				</li>	
 				<li>
-					<Link to='/categories'><FcSearch/></Link>
+					<Link to='/categories'><FcSearch style={{fontSize:'2rem'}} /></Link>
 				</li>
 				<li>
-					<Link to='/bestsellers'><FcLike/></Link>
+					<Link to='/bestsellers'><FcLike style={{fontSize:'2rem'}} /></Link>
 				</li>
 				<li>
 					<Link to='/cart'>
-						<FaShoppingCart />
+						<FaShoppingCart style={{fontSize:'2rem'}}  />
 						{cartItemCount > 0 && <div className='cart-item-count'>{cartItemCount}</div>}
 					</Link>
 				</li>
