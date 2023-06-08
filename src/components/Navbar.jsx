@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 import '../styles/Navbar.css';
 import { useState, useEffect } from 'react';
-import { FcHome, FcAbout, FcSearch, FcLike, FcList } from "react-icons/fc";
-import { FaShoppingCart } from "react-icons/fa";
+import { FcHome, FcAbout, FcSearch, FcList } from "react-icons/fc";
+import { FaShoppingCart , FaStar} from "react-icons/fa";
 
 function Navbar() {
 	const [cartItemCount, setCartItemCount] = useState(0);
@@ -45,7 +45,7 @@ function Navbar() {
 					<Link to='/categories'><FcSearch style={{fontSize:'2rem'}} /></Link>
 				</li>
 				<li>
-					<Link to='/bestsellers'><FcLike style={{fontSize:'2rem'}} /></Link>
+					<Link to='/bestsellers'><FaStar style={{fontSize:'2rem' , color: 'gold'}} /></Link>
 				</li>
 				<li>
 					<Link to='/cart'>
