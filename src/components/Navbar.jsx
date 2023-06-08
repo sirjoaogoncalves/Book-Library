@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import '../styles/Navbar.css';
 import { useState, useEffect } from 'react';
+import { FcHome, FcAbout, FcSearch, FcLike, FcList } from "react-icons/fc";
+import { FaShoppingCart } from "react-icons/fa";
 
 function Navbar() {
 	const [cartItemCount, setCartItemCount] = useState(0);
@@ -30,24 +32,24 @@ function Navbar() {
 	return (
 		<nav className='navbar'>
 			<div className='navbar-toggle' onClick={toggleMenu}>
-				<span className='sr-only'>#</span>
+				<span className='sr-only'><FcList/></span>
 			</div>
 			<ul className={`navbar-links ${showMenu ? 'active' : ''}`}>
 				<li>
-					<Link to='/'>Home</Link>
+					<Link to='/'><FcHome/></Link>
 				</li>
 				<li>
-					<Link to='/about'>About Us</Link>
+					<Link to='/about'><FcAbout/></Link>
 				</li>	
 				<li>
-					<Link to='/categories'>Categories</Link>
+					<Link to='/categories'><FcSearch/></Link>
 				</li>
 				<li>
-					<Link to='/bestsellers'>Best Sellers</Link>
+					<Link to='/bestsellers'><FcLike/></Link>
 				</li>
 				<li>
 					<Link to='/cart'>
-						Cart
+						<FaShoppingCart />
 						{cartItemCount > 0 && <div className='cart-item-count'>{cartItemCount}</div>}
 					</Link>
 				</li>

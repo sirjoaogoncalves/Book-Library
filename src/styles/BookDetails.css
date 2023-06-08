@@ -33,7 +33,7 @@ body {
 .book-info {
 	font-size: 1.2rem;
 	line-height: 1.1rem;
-	color: white;
+	color: black;
 	text-align: justify !important;
 	width: 90%;
   overflow: hidden;
@@ -73,6 +73,9 @@ body {
   display: none;
 }
 
+.book-info li {
+  display: none;
+}
 .book-info .author {
 	font-weight: bold;
 }
@@ -128,7 +131,7 @@ body {
 	font-weight: bold;
 	font-size: 1rem;
 	transition: color 0.3s ease;
-	border: 0.5px solid rgb(255, 255, 255);
+	border: 0.5px solid black;
 	border-radius: 0.6rem;
 	padding: 0.8rem 1rem;
 	width: 100%;

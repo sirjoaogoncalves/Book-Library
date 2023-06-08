@@ -1,8 +1,8 @@
-const ParticleConfig = {
+const ParticleConfig ={
   "autoPlay": true,
   "background": {
     "color": {
-      "value": "#000"
+      "value": "#efefef"
     },
     "image": "",
     "position": "",
@@ -43,8 +43,8 @@ const ParticleConfig = {
         "type": "circle"
       },
       "onHover": {
-        "enable": false,
-        "mode": [],
+        "enable": true,
+        "mode": "bubble",
         "parallax": {
           "enable": false,
           "force": 2,
@@ -69,9 +69,14 @@ const ParticleConfig = {
         "distance": 200
       },
       "bubble": {
-        "distance": 200,
-        "duration": 0.4,
+        "distance": 400,
+        "duration": 2,
         "mix": false,
+        "opacity": 0.8,
+        "color": {
+          "value": "#ff0000"
+        },
+        "size": 40,
         "divs": {
           "distance": 200,
           "duration": 0.4,
@@ -196,7 +201,7 @@ const ParticleConfig = {
       }
     },
     "color": {
-      "value": "#ffffff",
+      "value": "#1b1e34",
       "animation": {
         "h": {
           "count": 0,
@@ -271,40 +276,36 @@ const ParticleConfig = {
         "options": {}
       },
       "outModes": {
-        "default": "destroy",
-        "bottom": "destroy",
-        "left": "destroy",
-        "right": "destroy",
-        "top": "destroy"
+        "default": "out",
+        "bottom": "out",
+        "left": "out",
+        "right": "out",
+        "top": "out"
       },
       "random": false,
-      "size": true,
-      "speed": 5,
+      "size": false,
+      "speed": 8,
       "spin": {
         "acceleration": 0,
         "enable": false
       },
       "straight": false,
       "trail": {
-        "enable": true,
-        "length": 3,
-        "fill": {
-          "color": {
-            "value": "#000000"
-          }
-        }
+        "enable": false,
+        "length": 10,
+        "fill": {}
       },
       "vibrate": false,
       "warp": false
     },
     "number": {
       "density": {
-        "enable": false,
+        "enable": true,
         "width": 1920,
         "height": 1080
       },
       "limit": 0,
-      "value": 0
+      "value": 6
     },
     "opacity": {
       "random": {
@@ -313,7 +314,7 @@ const ParticleConfig = {
       },
       "value": {
         "min": 0.3,
-        "max": 0.8
+        "max": 0.5
       },
       "animation": {
         "count": 0,
@@ -342,8 +343,15 @@ const ParticleConfig = {
     "shape": {
       "close": true,
       "fill": true,
-      "options": {},
-      "type": "circle"
+      "options": {
+        "polygon": {
+          "sides": 6
+        },
+        "star": {
+          "sides": 6
+        }
+      },
+      "type": "polygon"
     },
     "size": {
       "random": {
@@ -351,8 +359,8 @@ const ParticleConfig = {
         "minimumValue": 1
       },
       "value": {
-        "min": 1,
-        "max": 10
+        "min": 100,
+        "max": 160
       },
       "animation": {
         "count": 0,
@@ -551,65 +559,12 @@ const ParticleConfig = {
   "style": {},
   "themes": [],
   "zLayers": 100,
-  "emitters": {
-    "autoPlay": true,
-    "fill": true,
-    "life": {
-      "wait": false
-    },
-    "rate": {
-      "quantity": 10,
-      "delay": 0.25
-    },
-    "shape": "square",
-    "startCount": 0,
-    "size": {
-      "mode": "percent",
-      "height": 0,
-      "width": 0
-    },
-    "direction": "none",
-    "particles": {},
-    "position": {
-      "x": 50,
-      "y": 50
-    },
-    "spawnColor": {
-      "value": "#ff0000",
-      "animation": {
-        "h": {
-          "count": 0,
-          "enable": true,
-          "offset": 0,
-          "speed": 5,
-          "delay": 0,
-          "decay": 0,
-          "sync": true
-        },
-        "s": {
-          "count": 0,
-          "enable": false,
-          "offset": 0,
-          "speed": 1,
-          "delay": 0,
-          "decay": 0,
-          "sync": true
-        },
-        "l": {
-          "count": 0,
-          "enable": true,
-          "offset": {
-            "min": 20,
-            "max": 80
-          },
-          "speed": 0,
-          "delay": 0,
-          "decay": 0,
-          "sync": true
-        }
-      }
+  "motion": {
+    "disable": false,
+    "reduce": {
+      "factor": 4,
+      "value": true
     }
   }
-}
-
+} 
 export default ParticleConfig

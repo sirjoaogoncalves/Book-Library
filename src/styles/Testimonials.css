@@ -33,13 +33,14 @@
     margin: 15px;
     font-size: 1.2rem;
     font-weight: bold;
-    color: white;
+    color: black;
   }
 
   .testimonial p {
     margin: 1rem 3rem;
     font-size: 1.2rem;
   }
+  
 
   .slider {
     display: flex;
@@ -55,13 +56,24 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 50px;
-    height: 50px;
-    
-    background-color: #ffffff00;
-   
+    width: 20px;
+    height: 30px;
     cursor: pointer;
-    z-index: 1;
+    z-index: 1; 
+  }
+
+  .slick-prev {
+    left: 0;
+    border-radius: 50%;
+    background-color: black;
+    opacity: 0.25;
+  }
+
+  .slick-next {
+    right: 0;
+    border-radius: 50%;
+    background-color: black;
+    opacity: 0.25;
   }
 
 

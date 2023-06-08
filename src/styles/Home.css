@@ -8,7 +8,7 @@ h1 {
 	font-size: 3rem;
 	text-align: center;
 	margin-top: 2rem;
-	color: #e0e4e9;
+	color: black;
 }
 
 p {
@@ -16,7 +16,7 @@ p {
 	display: flex;
 	justify-content: center;
 	margin-right: 3.5rem;
-	color: #e0e4e9;
+	color: black;
 }
 
 .loading-container {
@@ -27,7 +27,7 @@ p {
 }
 
 .loader {
-	border: 10px solid #f3f3f3;
+	border: 10px solid black;
 	border-top: 10px solid #f12b6b;
 	border-radius: 50%;
 	width: 80px;
@@ -90,7 +90,7 @@ button:hover {
 }
 
 .book {
-	background-color: #eaf3ea0e;
+	background-color: transparent;
 	padding: 1rem auto; /* add padding */
 	text-align: center;
 	margin: 3rem auto;
@@ -105,7 +105,7 @@ button:hover {
 }
 
 .book:hover {
-	box-shadow: 0 0 40px rgba(248, 245, 245, 0.541);
+	box-shadow: 0 0 40px #cccccc;
 	cursor: pointer;
 }
 
@@ -119,12 +119,12 @@ button:hover {
 .book h3 {
 	font-size: 1.5rem;
 	margin-bottom: 0.5rem;
-	color: #e0e4e9;
+	color: black;
 }
 
 .book p {
 	margin: 0;
-	color: #e6e0e0;
+	color: black;
 }
 
 .slider {

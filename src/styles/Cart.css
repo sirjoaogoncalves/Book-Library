@@ -25,13 +25,13 @@
 .cart td {
   padding: 10px;
   text-align: center;
-  border: 1px outset #ffffff18;
-  color: #ccc;
+  border: 1px outset #8c8c8c;
+  color: black;
 }
 
 .cart th {
   font-weight: bold;
-  color: #ccc;
+  color: black;
 }
 
 .cart img {
