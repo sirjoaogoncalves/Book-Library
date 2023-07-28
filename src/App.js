@@ -13,7 +13,7 @@ import ParticleBackground from "./components/particleBackground";
 
 function App() {
   return (
-    <Router>
+    <Router basename="Book-Library">
       <ParticleBackground />
       <Navbar />
       <Routes>
