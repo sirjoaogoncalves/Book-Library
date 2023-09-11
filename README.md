@@ -1,5 +1,5 @@
 The aim of this project was to apply the knowledge I gained throughout the course in the front-end development field, creating a project entirely developed by me (Joao Goncalves).
-During the execution of this project, I used the skills and techniques I learned to build an application or website that showcased my proficiency in interface design, web programming, HTML element manipulation, CSS styling, and interactivity through JavaScript. This project served as an opportunity to consolidate my learning and demonstrate my skills in front-end development.
+During the execution of this project, I used the skills and techniques I learned to build an website that showcased my proficiency in interface design, web programming, HTML element manipulation, CSS styling, and interactivity through JavaScript. This project served as an opportunity to consolidate my learning and demonstrate my skills in front-end development.
 
 ![Magnificent Readers Logo](/public/favicon.ico)
 
