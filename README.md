@@ -1,4 +1,6 @@
-# Magnificent Readers ![Magnificent Readers Logo](/public/favicon.ico)
+![Magnificent Readers Logo](/public/favicon.ico)
+
+# Magnificent Readers
 
 Magnificent Readers is a online book store where you can view our featured books, search for your own or see the bestesellers.
 
