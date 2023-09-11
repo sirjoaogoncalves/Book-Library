@@ -5,23 +5,22 @@ import '../styles/Categories.css';
 
 function Categories() {
   // Initialize state variables
-  const [books, setBooks] = useState([]); // Holds the fetched books
-  const [selectedCategory, setSelectedCategory] = useState(''); // Tracks the selected category
-  const [selectedAuthor, setSelectedAuthor] = useState(''); // Tracks the selected author
-  const [showCategories, setShowCategories] = useState(false); // Controls the visibility of category dropdown
-  const [showAuthors, setShowAuthors] = useState(false); // Controls the visibility of author dropdown
-  const [searchClicked, setSearchClicked] = useState(false); // Tracks if the search button is clicked
-  
-  // Event handler for category selection change
+  const [books, setBooks] = useState([]); 
+  const [selectedCategory, setSelectedCategory] = useState(''); 
+  const [selectedAuthor, setSelectedAuthor] = useState(''); 
+  const [showCategories, setShowCategories] = useState(false); 
+  const [showAuthors, setShowAuthors] = useState(false); 
+  const [searchClicked, setSearchClicked] = useState(false); 
+
   const handleCategoryChange = event => {
     const category = event.target.value;
-    setSelectedCategory(category); // Update the selected category state
+    setSelectedCategory(category); 
   };
   
-  // Event handler for author selection change
+  
   const handleAuthorChange = event => {
     const author = event.target.value;
-    setSelectedAuthor(author); // Update the selected author state
+    setSelectedAuthor(author); 
   };
 
 
@@ -119,7 +118,7 @@ const fetchBooksByRating = () => {
   ];
 
 useEffect(() => {
-    fetchBooksByRating(); // Fetch books with highest rating on component mount
+    fetchBooksByRating(); 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -136,20 +135,20 @@ useEffect(() => {
 
 return (
 	<div className='container'>
-	    {/* Heading */}
+	   
 		<h1>Search by Category or Author</h1>
 		<div className='categories-buttons'>
-		    {/* Button to toggle display of categories */}
+		   
 			<button onClick={toggleShowCategories}>Categories</button>
-			  {/* Button to toggle display of authors */}
+			
 			<button onClick={toggleShowAuthors}>Authors</button>
 		</div>
-		  {/* Render categories dropdown if showCategories is true */}
+		
 		{showCategories && (
 			<div className='categories'>
-			    {/* Categories dropdown */}
+			   
 				<select value={selectedCategory} onChange={handleCategoryChange}>
-				    {/* Render category options */}
+				    
 					{categories.map(category => (
 						<option key={category} value={category}>
 							{category}
@@ -158,12 +157,12 @@ return (
 				</select>
 			</div>
 		)}
-		  {/* Render authors dropdown if showAuthors is true */}
+		
 		{showAuthors && (
 			<div className='authors'>
-			    {/* Authors dropdown */}
+			  
 				<select value={selectedAuthor} onChange={handleAuthorChange}>
-				    {/* Render author options */}
+				  
 					{authors.map(author => (
 						<option key={author} value={author}>
 							{author}
@@ -172,11 +171,11 @@ return (
 				</select>
 			</div>
 		)}
-		   {/* Search button */}
+		   
 		<button onClick={handleSearch}>Search</button>
-		   {/* Render BookList component if there are books */}
+		   
 		{books.length > 0 && <BookList books={books} />}
-		  {/* Display message if no books found and search button clicked */}
+		 
 		{books.length === 0 && searchClicked && <div className='message'>No books found. Please try another category or author.</div>}
 	</div>
 );

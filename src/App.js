@@ -11,12 +11,14 @@ import Navbar from "../src/components/Navbar";
 import Footer from "./components/Footer";
 import ParticleBackground from "./components/particleBackground";
 
+
+
 function App() {
   return (
     <Router basename="Book-Library">
       <ParticleBackground />
       <Navbar />
-      <Routes>
+      <Routes basename = '/Book-Library'>
         <Route exact path="/" element={<Home />} />
         <Route path="/search/:searchTerm" element={<SearchResults />} />
         <Route path="/book/:bookId" element={<BookDetails />} />

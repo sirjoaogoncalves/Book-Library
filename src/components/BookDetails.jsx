@@ -6,7 +6,7 @@ import '../styles/BookDetails.css';
 function BookDetails() {
 	const [book, setBook] = useState(null);
 	const { bookId } = useParams();
-	const [clicked, setClicked] = useState(false); // add state for clicked
+	const [clicked, setClicked] = useState(false); 
 
 	useEffect(() => {
 		axios

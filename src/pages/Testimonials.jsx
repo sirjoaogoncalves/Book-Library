@@ -43,7 +43,6 @@ const Testimonials = () => {
 			},
 		],
 	};
-
 	return (
 		<Slider {...settings} className='slider'>
 			<div className='testimonial'>
