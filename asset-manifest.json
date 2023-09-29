@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Book-Library/static/css/main.ca432a69.css",
+    "main.js": "/Book-Library/static/js/main.0cf44ed7.js",
+    "static/media/testimonial3.png": "/Book-Library/static/media/testimonial3.a6648329291f48c3cdcb.png",
+    "static/media/testimonial1.png": "/Book-Library/static/media/testimonial1.36d09850c7abb8c4876f.png",
+    "static/media/testimonial2.png": "/Book-Library/static/media/testimonial2.d582df183076e4ede1c4.png",
+    "static/media/testimonial4.png": "/Book-Library/static/media/testimonial4.325762e353e6754b528f.png",
+    "static/media/slick.svg": "/Book-Library/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/Book-Library/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/Book-Library/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/Book-Library/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/Book-Library/index.html",
+    "main.ca432a69.css.map": "/Book-Library/static/css/main.ca432a69.css.map",
+    "main.0cf44ed7.js.map": "/Book-Library/static/js/main.0cf44ed7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ca432a69.css",
+    "static/js/main.0cf44ed7.js"
+  ]
+}
